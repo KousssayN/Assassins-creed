@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="bodyBuy" onload="geenercaptha()">
+    <h1 id="purGm">purchase the games</h1>
+    <form action="#" method="post" onsubmit="return verif3()">
+    <aside id="asideBuy">
+        <div>
+            <label for="mail">email :</label>
+            <input type="text" name="mail" id="mail">
+        </div>
+        <div>
+            <label for="psw">password :</label>
+            <input type="password" name="psw" id="psw">
+        </div>
+        <div>
+            <label for="games">the games</label>
+            <select name="games" id="games">
+                <option value="">choose the game</option>
+                <option value="ac1">Assassin's creed</option>
+                <option value="ac2">Assassin's creed II</option>
+                <option value="acB">Assassin's creed brotherhood</option>
+                <option value="acR">Assassin's creed revelations</option>
+                <option value="ac3">Assassin's creed III</option>
+                <option value="ac4">Assassin's creed black flag</option>
+                <option value="acRo">Assassin's creed rogue</option>
+                <option value="acU">Assassin's creed unity</option>
+                <option value="acSy">Assassin's creed syndicate</option>
+                <option value="acOrg">Assassin's creed origins</option>
+                <option value="acOdsy">Assassin's creed Odyssey</option>
+                <option value="acVal">Assassin's creed valhala</option>
+                <option value="acMir">Assassin's creed mirage</option>
+            </select>
+        </div>
+        <div id="platDiv">
+            <label for="plat">Platform</label>
+            <input type="radio" name="plat" id="pc"> PC
+            <input type="radio" name="plat" id="xbox"> XBOX
+            <input type="radio" name="plat" id="play"> PlayStaion
+        </div>
+        <div>
+            <label for="nump" class="lab">How many copies</label>
+            <input type="number" name="nump" id="nump1">
+        </div>
+        <div>
+            <label for="captcha" class="lab">verify this captcha</label>
+            <input type="text" name="captcha" id="captcha" placeholder="" disabled>
+            <br>
+            <input type="text" name="captcha2" id="captcha2" placeholder="Verify Captcha">
+        </div>
+        <div>
+            <label for="dlc">the DLCs</label>
+            <input type="checkbox" name="dlc1" id="dlc1">DLC-1
+            <input type="checkbox" name="dlc2" id="dlc2">DLC-2
+            <input type="checkbox" name="dlc3" id="dlc3">DLC-3
+        </div>
+        <div>
+            <figcaption id="figCap">
+                disclaimer: the games prices changes depending of the Platform you are using
+            </figcaption>
+        </div>
+        <div id="divBuy1">
+            <input type="submit" name="buy" id="buy">
+        </div>
+    </aside>
+</form>
+<script src="controlles.js"></script>
+</body>
+
+</html>

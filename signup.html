@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assassin's Creed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="main2">
+    <div id="mainOrder">
+        <div id="btnlog">
+            <div  onmouseover="colorup1()" onmouseout="colordown1()"  id="login"><a  href="login.html" target="iframeOrder">login</a></div>
+            <div  onmouseover="colorup2()" onmouseout="colordown2()"  id="signup"><a href="signup.html" target="iframeOrder">signUp</a></div>
+        </div>
+        <div>
+            <form action="signup.php" method="post" onsubmit="return verif2()">
+                <fieldset id="fiel1">
+                    <h2>signUp for free</h2>
+                    <div id="inputcss">
+                        <div>
+                            <label for="np">name :</label>
+                            <input type="text" name="np" id="np">
+                        </div>
+                        <div>
+                            <label for="prename">lastname :</label>
+                            <input type="text" name="prename" id="prename">
+                        </div>
+                        <div>
+                            <label for="tel2">phone number :</label>
+                            <input type="text" name="tel2" id="tel2">
+                        </div>
+                        <div>
+                            <label for="mail2">email :</label>
+                            <input type="text" name="mail2" id="mail2">
+                        </div>
+                        <div>
+                            <label for="psw2">password :</label>
+                            <input type="password" name="psw2" id="psw2">
+                        </div>
+                        <div>
+                            <label for="cpsw2">confirm password :</label>
+                            <input type="password" name="cpsw2" id="cpsw2">
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div id="subdiv">
+                        <input type="submit" name="sub" id="sub" value="Sign Up">
+                    </div>
+                </fieldset>
+        </div>
+        </form>
+    </div>
+    </main>
+    <script src="controlles.js"></script>
+</body>
+
+</html>

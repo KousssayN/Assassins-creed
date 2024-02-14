@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assassin's Creed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="main2">
+    <div id="mainOrder">
+        <div id="btnlog">
+            <div  onmouseover="colorup1()" onmouseout="colordown1()"  id="login"><a  href="login.html" target="iframeOrder">login</a></div>
+            <div  onmouseover="colorup2()" onmouseout="colordown2()"  id="signup"><a href="signup.html" target="iframeOrder">signUp</a></div>
+        </div>
+        <div>
+            <form action="login.php" method="post" onsubmit="return verif1()">
+                <fieldset id="fiel1">
+                    <h2>login to your account</h2>
+                    <div id="inputcss">
+                        <div>
+                            <label for="tel">phone number :</label>
+                            <input type="text" name="tel" id="tel">
+                        </div>
+                        <div>
+                            <label for="mail">email :</label>
+                            <input type="text" name="mail" id="mail">
+                        </div>
+                        <div>
+                            <label for="psw">password :</label>
+                            <input type="password" name="psw" id="psw">
+                        </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <div id="subdiv">
+                        <input type="submit" name="sub" id="sub" value="login">
+                    </div>
+                </fieldset>
+        </div>
+        </form>
+    </div>
+    </main>
+    <script src="controlles.js"></script>
+</body>
+
+</html>
